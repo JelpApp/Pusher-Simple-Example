@@ -5,16 +5,13 @@ const app = express()
 const port = 3000
 
 // // Pusher configuration
-
-// // To run enable fowlowing lines
-
-// var channels_client = new Pusher({
-//   appId: '878956',
-//   key: 'b4258bc489ab7ed787a5',
-//   secret: 'cde3e9574f229a841d64',
-//   cluster: 'mt1',
-//   encrypted: true
-// });
+var channels_client = new Pusher({
+  appId: '878956',
+  key: 'b4258bc489ab7ed787a5',
+  secret: 'cde3e9574f229a841d64',
+  cluster: 'mt1',
+  encrypted: true
+});
 
 //App configuration
 app.use(express.static('public'))
